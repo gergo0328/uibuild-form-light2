@@ -13,6 +13,7 @@ body {
 
         @media (max-width: 639px) {
             text-align: left;
+            margin: 20px;
         }
     }
 
@@ -45,6 +46,7 @@ body {
 
             @media (max-width:639px) {
                 margin-left: 20px;
+                margin-right: 20px;
                 padding-left: 20px;
 
                 max-width: 100%;
@@ -52,8 +54,7 @@ body {
             }
         }
 
-        textarea {
-            //Megjegyzés text
+        textarea {      //Megjegyzés text
             width: 600px;
             max-width: 600px;
             height: 120px;
@@ -86,7 +87,6 @@ body {
                 max-width: 15px;
                 min-width: 15px;
                 height: 15px;
-                appearance: none;
 
                 @media (max-width:439px){
                     margin: 0;
@@ -98,13 +98,18 @@ body {
                 font-weight: 400;
                 font-size: 16px;
                 color: #467745;
-
+                
+                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
 
                 @media (max-width:439px) {
                     margin-left: 20px;
                     padding-left: 20px;
+                }
+
+                a{
+                    text-decoration: underline;
                 }
             }
         }
@@ -126,6 +131,7 @@ body {
         align-items: center;
         justify-content: center;
         letter-spacing: 0.2em;
+        text-transform: uppercase;
 
         color: #c0ebf9;
         background-color: #467745;

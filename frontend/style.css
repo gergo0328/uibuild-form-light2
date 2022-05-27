@@ -16,6 +16,7 @@ body h1 {
 @media (max-width: 639px) {
   body h1 {
     text-align: left;
+    margin: 20px;
   }
 }
 
@@ -59,6 +60,7 @@ body div input {
 @media (max-width: 639px) {
   body div input {
     margin-left: 20px;
+    margin-right: 20px;
     padding-left: 20px;
     max-width: 100%;
     min-width: 40px;
@@ -95,9 +97,6 @@ body div div input {
   max-width: 15px;
   min-width: 15px;
   height: 15px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 @media (max-width: 439px) {
@@ -111,6 +110,8 @@ body div div label {
   font-weight: 400;
   font-size: 16px;
   color: #467745;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -124,6 +125,10 @@ body div div label {
     margin-left: 20px;
     padding-left: 20px;
   }
+}
+
+body div div label a {
+  text-decoration: underline;
 }
 
 body button {
@@ -145,6 +150,7 @@ body button {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
   color: #c0ebf9;
   background-color: #467745;
 }
