@@ -1,0 +1,135 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #c0ebf9;
+    font-family: 'Poppins', sans-serif;
+
+    h1 {
+        margin: 7% auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        color: #467745;
+
+        @media (max-width: 639px) {
+            text-align: left;
+        }
+    }
+
+    div {
+        width: 640px;
+        max-width: 640px;
+        height: fit-content;
+        margin: 20px auto;
+
+        //background-color: #fff;
+
+
+        ::placeholder {
+            color: #467745;
+        }
+
+        input {
+            //Tárgy input
+            width: 600px;
+            max-width: 600px;
+            height: 64px;
+
+            margin: 20px;
+            padding: 20px;
+
+            font-weight: 500;
+            font-size: 16px;
+            color: #467745;
+            background-color: #fff;
+
+            @media (max-width:639px) {
+                margin-left: 20px;
+                padding-left: 20px;
+
+                max-width: 100%;
+                min-width: 40px;
+            }
+        }
+
+        textarea {
+            //Megjegyzés text
+            width: 600px;
+            max-width: 600px;
+            height: 120px;
+
+            margin: 20px;
+            padding: 20px;
+
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #467745;
+            background-color: #fff;
+
+            @media (max-width: 639px) {
+                max-width: 100%;
+                min-width: 40px;
+
+            }
+
+        }
+
+        div {
+            width: 600px;
+
+            input{    //checkbox
+                margin: 0 5px 0 50px;
+                padding:0;
+
+                width:15px;
+                max-width: 15px;
+                min-width: 15px;
+                height: 15px;
+                appearance: none;
+
+                @media (max-width:439px){
+                    margin: 0;
+                    padding:0;
+                }
+
+            }
+            label {    //2 input mező szöveg
+                font-weight: 400;
+                font-size: 16px;
+                color: #467745;
+
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width:439px) {
+                    margin-left: 20px;
+                    padding-left: 20px;
+                }
+            }
+        }
+
+    }
+    button{
+        position: relative;
+        top: 10%;
+        left: 50%;
+        margin: 20px;
+        width: 280px;
+        max-width: 280px;
+        height: 80px;
+
+        transform: translate(-50%, -50%);
+
+        font-weight: 700;
+        font-size: 21px;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.2em;
+
+        color: #c0ebf9;
+        background-color: #467745;
+
+
+    }
+}
